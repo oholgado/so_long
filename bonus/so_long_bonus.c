@@ -42,9 +42,9 @@ int	main(int argc, char **argv)
 	t_g		g;
 	char	*boo;
 
-	boo = ft_strnstr(argv[1], ".ber", ft_strlen(argv[1]));
 	if (argc == 2)
 	{
+		boo = ft_strnstr(argv[1], ".ber", ft_strlen(argv[1]));
 		if (boo == NULL)
 		{
 			printf("Error\nBad extension file");
@@ -54,6 +54,6 @@ int	main(int argc, char **argv)
 		ft_program_flow(&g);
 	}
 	else
-		printf("Error\nInsert a valid map, please.");
+		printf("Error\nExecute ./so_long map_file.ber, please.");
 	return (0);
 }
